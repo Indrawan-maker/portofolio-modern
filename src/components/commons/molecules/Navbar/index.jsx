@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import SearchInput from '../../atoms/SearchInput'
 
 const Navbar = () => {
+  const [search, setSearch] = useState("")
+
   return (
     <header className='absolute top-4 z-50 mt-2 h-12 w-(--my-width-nav) flex items-center justify-between bg-transparent px-4'>
       <section className='flex items-center justify-center gap-2'>
@@ -11,7 +14,13 @@ const Navbar = () => {
           </button>
         </div>
       </section>
-      <section>Right</section>
+      <section>
+        <SearchInput
+          value={search}
+          onChange={(e) => setSearch(e)}
+          onSearch={() => console.log(search)}
+        />
+      </section>
     </header>
   )
 }

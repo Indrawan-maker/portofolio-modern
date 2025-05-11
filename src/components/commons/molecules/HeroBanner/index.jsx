@@ -31,7 +31,6 @@ const HeroBanner = () => {
           onClick={() => console.log('test click...')}
         />
       </div>
-
     </section>
   )
 }
