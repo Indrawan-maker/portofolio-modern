@@ -1,5 +1,5 @@
 import React from "react";
-import RoudedImg from "../../Atoms/RoundedImg";
+import RoundedImg from "../../atoms/RoundedImg";
 
 const CardLarge = ({ img, text, index }) => {
   return (
@@ -22,7 +22,7 @@ const CardLarge = ({ img, text, index }) => {
 
       <div className="relative z-1 flex">
         {[1, 2, 3, 4].map((_, index) => (
-          <RoudedImg key={index} src="/images/profile.jpg" index={index} />
+          <RoundedImg key={index} src="/images/profile.jpg" index={index} />
         ))}
       </div>
     </div>

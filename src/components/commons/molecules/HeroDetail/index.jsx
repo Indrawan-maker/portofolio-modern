@@ -3,7 +3,7 @@ import BoxSocial from "../../atoms/BoxSocial";
 import CardLarge from "../../atoms/CardLarge";
 import CardSmall from "../../atoms/CardSmall";
 import Modal from "../../atoms/Modal";
-import RoudedImg from "../../atoms/RoundedImg";
+import RoundedImg from "../../atoms/RoundedImg";
 
 import {
   listIndustries,
@@ -57,9 +57,9 @@ const HeroDetail = () => {
 
               <div className="mt-1 flex">
                 {listIndustries.map((item, index) => (
-                  <RoudedImg key={index} src={item.icon} index={index} />
+                  <RoundedImg key={index} src={item.icon} index={index} />
                 ))}
-                <RoudedImg key={1} text="MORE" index={1} />
+                <RoundedImg key={1} text="MORE" index={1} />
               </div>
             </div>
           </div>

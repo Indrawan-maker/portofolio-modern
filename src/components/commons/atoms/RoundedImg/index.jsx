@@ -1,4 +1,4 @@
-const RoudedImg = ({ src, index, text }) => {
+const RoundedImg = ({ src, index, text }) => {
   return (
     <div
       key={index}
@@ -17,4 +17,4 @@ const RoudedImg = ({ src, index, text }) => {
   );
 };
 
-export default RoudedImg;
+export default RoundedImg
