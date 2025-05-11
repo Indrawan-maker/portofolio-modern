@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SearchInput from '../../atoms/SearchInput'
+import BoxProfile from '../../atoms/BoxProfile'
 
 const Navbar = () => {
   const [search, setSearch] = useState("")
@@ -14,11 +15,16 @@ const Navbar = () => {
           </button>
         </div>
       </section>
-      <section>
+      <section className='flex items-center justify-between gap-2 max-md:hidden'>
         <SearchInput
           value={search}
           onChange={(e) => setSearch(e)}
           onSearch={() => console.log(search)}
+        />
+        <BoxProfile
+          name={`Dea Afrizal`}
+          onClick={() => console.log('ok')}
+          picture={'/images/dea-afrizal-about.png'}
         />
       </section>
     </header>
