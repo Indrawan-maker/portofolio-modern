@@ -10,6 +10,91 @@ export const listSkills = [
     icon: "/icons/tailwind.png",
     link: "https://tailwindcss.com/",
   },
+  {
+    name: "Phyton",
+    icon: "/icons/phyton.png",
+    link: "https://www.python.org/",
+  },
+  {
+    name: "Laravel",
+    icon: "/icons/laravel.png",
+    link: "https://www.laravel.com/",
+  },
+  {
+    name: "MongoDb",
+    icon: "/icons/mongodb.png",
+    link: "https://www.mongodb.com/",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/icons/postgress.png",
+    link: "https://www.posgresql.com/",
+  },
+  {
+    name: "PHP",
+    icon: "/icons/php.png",
+    link: "https://www.php.net/",
+  },
+  {
+    name: "Flutter",
+    icon: "/icons/flutter.png",
+    link: "https://www.flutter.dev/",
+  },
+  {
+    name: "Java",
+    icon: "/icons/java.png",
+    link: "https://www.java.com/",
+  },
+  {
+    name: "Ruby",
+    icon: "/icons/ruby.png",
+    link: "https://www.ruby-lang.org/",
+  },
+  {
+    name: "C++",
+    icon: "/icons/c++.png",
+    link: "https://www.isocpp.org/",
+  },
+  {
+    name: "Golang",
+    icon: "/icons/golang.png",
+    link: "https://www.go.dev/",
+  },
+  {
+    name: "Vue",
+    icon: "/icons/vue.png",
+    link: "https://www.vuejs.dev/",
+  },
+  {
+    name: "Docker",
+    icon: "/icons/docker.png",
+    link: "https://www.docker.com/",
+  },
+  {
+    name: "Angular",
+    icon: "/icons/angular.png",
+    link: "https://www.angular.dev/",
+  },
+  {
+    name: "Typescript",
+    icon: "/icons/typescript.png",
+    link: "https://www.typescriptlang.dev/",
+  },
+  {
+    name: "Lua",
+    icon: "/icons/lua.png",
+    link: "https://www.lua.org/",
+  },
+  {
+    name: "Cypress",
+    icon: "/icons/cypress.png",
+    link: "https://www.cypress.io/",
+  },
+  {
+    name: "MySQL",
+    icon: "/icons/mysql.png",
+    link: "https://www.mysql.com/",
+  },
 ];
 
 export const listIndustries = [

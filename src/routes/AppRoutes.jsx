@@ -1,7 +1,10 @@
 import MainLayout from "../components/layouts/MainLayout";
+import AboutPage from "../pages/AboutPage";
 import HomePage from "../pages/HomePage";
+import NotFound from "../pages/NotFound";
+import SkillsPage from "../pages/SkillsPage";
 
-const AppRoutes = [
+const routes = [
   {
     name: "main",
     path: "/",
@@ -20,21 +23,22 @@ const AppRoutes = [
         key: "about",
         name: "about",
         path: "/about",
-        Component: () => <p>ABOUT PAGE</p>,
+        Component: AboutPage,
       },
       {
-        key: "contact",
-        name: "contact",
-        path: "/contact",
-        Component: () => <p>CONTACT</p>,
+        key: "skills",
+        name: "skills",
+        path: "/skills",
+        Component: SkillsPage,
       },
     ],
   },
   {
     name: "404",
     path: "*",
-    Component: () => <p>this content 404 page</p>,
+    Component: NotFound,
     key: "404",
   },
 ];
-export default AppRoutes;
+
+export default routes;

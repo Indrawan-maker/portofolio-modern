@@ -10,11 +10,11 @@ const RoundedImg = ({ src, index, text }) => {
         <img
           src={src}
           alt={index}
-          className="h-full w-full rounded-full object-cover"
+          className="h-full w-full rounded-full object-fill"
         />
       )}
     </div>
   );
 };
 
-export default RoundedImg
+export default RoundedImg;

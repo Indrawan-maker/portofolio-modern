@@ -1,3 +1,5 @@
+import React from "react";
+
 const DoubleCurvedText = ({ type }) => {
   return (
     <svg viewBox="0 0 200 200" className="h-full w-full">
@@ -17,6 +19,7 @@ const DoubleCurvedText = ({ type }) => {
           />
         )}
       </defs>
+
       <text className="fill-black text-[18px] font-medium tracking-wide">
         <textPath
           href={type === "top" ? "#curveTop" : "#curveBottom"}
@@ -29,4 +32,5 @@ const DoubleCurvedText = ({ type }) => {
     </svg>
   );
 };
+
 export default DoubleCurvedText;

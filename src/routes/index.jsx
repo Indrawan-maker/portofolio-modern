@@ -1,12 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import AppRoutes from "./AppRoutes";
+import routes from "./AppRoutes";
 
 const renderRoute = (route) => {
   const { requireAuth, isLazy, props } = route;
+
   const renderRoutes = (routes) => {
     return routes ? routes.map(renderRoute) : null;
   };
+
   const Component = route.Component;
+
   const routeElement = requireAuth ? (
     <p>
       You need to be logged in to access this page. <br />
@@ -14,11 +17,13 @@ const renderRoute = (route) => {
   ) : (
     <Component {...props} />
   );
+
   const routeComponent = isLazy ? (
     <Suspense fallback={<p>Loading ...</p>}>{routeElement}</Suspense>
   ) : (
     routeElement
   );
+
   return (
     <Route
       path={route.index ? undefined : route.path}
@@ -32,6 +37,7 @@ const renderRoute = (route) => {
 };
 
 const Page = () => {
-  return <Routes>{AppRoutes.map(renderRoute)}</Routes>;
+  return <Routes>{routes.map(renderRoute)}</Routes>;
 };
+
 export default Page;

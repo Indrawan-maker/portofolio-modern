@@ -1,5 +1,6 @@
-import HeroBanner from '../components/commons/molecules/HeroBanner'
-import HeroDetail from '../components/commons/molecules/HeroDetail'
+import React from "react";
+import HeroBanner from "../components/commons/molecules/HeroBanner";
+import HeroDetail from "../components/commons/molecules/HeroDetail";
 
 const HomePage = () => {
   return (
@@ -7,7 +8,7 @@ const HomePage = () => {
       <HeroBanner />
       <HeroDetail />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

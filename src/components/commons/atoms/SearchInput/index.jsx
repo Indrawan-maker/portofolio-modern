@@ -4,6 +4,7 @@ const SearchInput = ({ value, onChange, onSearch }) => {
       onSearch(value);
     }
   };
+
   return (
     <div className="flex h-10 w-auto items-center justify-center gap-1 rounded-full bg-(--bg-primary-cray)">
       <input
@@ -27,4 +28,5 @@ const SearchInput = ({ value, onChange, onSearch }) => {
     </div>
   );
 };
+
 export default SearchInput;
