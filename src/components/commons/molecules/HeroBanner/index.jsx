@@ -16,6 +16,12 @@ const HeroBanner = () => {
         <i className="fa fa-arrow-up mb-2 rotate-45 text-xl text-white"></i>
         {viewText("bottom")}
       </div>
+
+      {/* ini buat card kecil di pojok */}
+      <div className='absolute right-4 bottom-4 flex flex-col gap-4 max-md:bottom-14 bg-(--bg-secondary-cray) w-28 h-28 rounded-xl'>
+
+      </div>
+
     </section>
   )
 }
