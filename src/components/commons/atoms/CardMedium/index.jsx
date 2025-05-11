@@ -1,8 +1,14 @@
 import React from 'react'
 
-const CardMedium = () => {
+const CardMedium = ({ bgImg, title, onClick }) => {
   return (
-    <div>Card Kecil</div>
+    <button className='h-34 w-34 flex flex-col justify-end bg-cover bg-center text-white shadow-lg rounded-2xl max-md:h-28 max-md:w-28' onClick={onClick}>
+      <img src={bgImg} />
+      <p>{title}</p>
+      <div>
+        <i className="fa fa-arrow-up text-xs text-white"></i>
+      </div>
+    </button>
   )
 }
 

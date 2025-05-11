@@ -19,8 +19,17 @@ const HeroBanner = () => {
       </div>
 
       {/* ini buat card kecil di pojok */}
-      <div className='absolute right-4 bottom-4 flex flex-col gap-4 max-md:bottom-14 bg-(--bg-secondary-cray) w-28 h-28 rounded-xl'>
-        <CardMedium />
+      <div className='absolute right-4 bottom-4 flex flex-col gap-4 max-md:bottom-14'>
+        <CardMedium
+          title={"About"}
+          bgImg={"/images/dea-afrizal-about.png"}
+          onClick={() => console.log('test click...')}
+        />
+        <CardMedium
+          title={"Skills"}
+          bgImg={"/images/dea-afrizal-skills.png"}
+          onClick={() => console.log('test click...')}
+        />
       </div>
 
     </section>
