@@ -1,5 +1,6 @@
 import React from 'react'
 import DoubleCurvedText from '../../atoms/DoubleCurvedText'
+import CardMedium from '../../atoms/CardMedium'
 
 const HeroBanner = () => {
 
@@ -19,7 +20,7 @@ const HeroBanner = () => {
 
       {/* ini buat card kecil di pojok */}
       <div className='absolute right-4 bottom-4 flex flex-col gap-4 max-md:bottom-14 bg-(--bg-secondary-cray) w-28 h-28 rounded-xl'>
-
+        <CardMedium />
       </div>
 
     </section>
